@@ -1,0 +1,26 @@
+<form #form="ngForm" (ngSubmit)="submitMovie()">
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="" [(ngModel)]="movie.title" required minlength="1" name="title">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Year</mat-label>
+        <input matInput placeholder="" [(ngModel)]="movie.year" required min="1" name="year">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Duration</mat-label>
+        <input matInput placeholder="" [(ngModel)]="movie.duration" min="1" name="duration">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Poster</mat-label>
+        <input matInput placeholder="" [(ngModel)]="movie.posterUri" name="posterUri">
+    </mat-form-field>
+
+   <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Add</button>
+   <!--  <button mat-raised-button color="primary" type="submit">Add</button> -->
+
+</form>

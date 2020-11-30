@@ -1,0 +1,35 @@
+ <!-- use another component -->
+ <app-other></app-other>
+
+ <!-- Interpolation / template -->
+ <h2>{{ title }}</h2>
+ <h2>{{ title | uppercase}}</h2>
+ <h2>{{ 1 + 1 }}</h2>
+ <h2>{{ (true) ? title: 'default title' }}</h2>
+
+ <!-- property binding -->
+ <input disabled>
+ <input [disabled]="myBoolean" #myInput>
+ {{ myInput.value }} <!-- acces a toutes les pptes de l'element html via la variable -->
+ <!-- <<button (click)="myBoolean = !myBoolean">Toggle</button>  -->
+ <button mat-raised-button (click)="toggleMyBoolean()">Toggle</button>
+
+ <!-- directives attributes -->
+ <p [hidden]="!myBoolean">myBoolean is true</p>
+ <!-- directives structures -->
+ <p *ngIf="myBoolean">myBoolean is true (2)</p>
+ <ng-template [ngIf]="myBoolean" [ngIfElse]="elseTemplate">
+   myBoolean still true
+ </ng-template>
+ <ng-template #elseTemplate>
+   myBoolean is False
+ </ng-template>
+ 
+
+ <!-- phantom markup -->
+ <ng-container *ngFor="let p of myData"> <!-- index possible also -->
+   <!-- Elvis operator ?.property check not null/undefined -->
+   <p>{{ p?.name }} is in the city {{p.city}}</p>
+ </ng-container>
+
+ 

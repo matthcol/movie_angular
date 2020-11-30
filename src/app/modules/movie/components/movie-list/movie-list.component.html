@@ -1,0 +1,6 @@
+<div id="movies-container">
+    <app-movie-card *ngFor="let m of movies" [movie]="m"></app-movie-card>
+    <!--  gere le subscribe/unsuscribe du Observable 
+    <app-movie-card *ngFor="let m of movies$ | async" [movie]="m"></app-movie-card>
+    -->
+</div>
