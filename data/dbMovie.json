@@ -1,10 +1,10 @@
 { "movies": [
-    {"id":74512,"title":"Family Plot","year":1976},
-    {"id":68611,"title":"Frenzy","year":1972},
-    {"id":65112,"title":"Topaz","year":1969},
-    {"id":61107,"title":"Torn Curtain","year":1966},
-    {"id":58329,"title":"Marnie","year":1964},
-    {"id":56869,"title":"The Birds","year":1963},
-    {"id":54215,"title":"Psycho","year":1960}
+    {"id":74512,"title":"Family Plot","year":1976, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BZWE5NDI0OTktNWZkZi00OTQ5LTg2ZTctNzljNDFmZmYyYWEzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {"id":68611,"title":"Frenzy","year":1972, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BMTg0MTg2ODE5Ml5BMl5BanBnXkFtZTgwMzUxMDY0MTE@._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {"id":65112,"title":"Topaz","year":1969, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BMTYyZDdiYjEtYmZkMy00Y2EyLWIwOGUtYzdlMzgzZDZkOTQwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {"id":61107,"title":"Torn Curtain","year":1966, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BNTYwODI4NjcwOV5BMl5BanBnXkFtZTgwMzU0OTk5MTE@._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {"id":58329,"title":"Marnie","year":1964, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BYjQwZjliMjQtZDg3Yy00MzVmLWI3YTgtYjMxNWNkN2ZhMzg2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {"id":56869,"title":"The Birds","year":1963, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BMTAxNDA1ODc5MDleQTJeQWpwZ15BbWU4MDg2MDA4OTEx._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {"id":54215,"title":"Psycho","year":1960, "duration":120, "posterUri":"https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"}
 ]
 }
