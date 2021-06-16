@@ -23,7 +23,7 @@ export class MovieListComponent implements OnInit, AfterViewInit {
   constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
-    this.loadProducts();
+    this.loadMovies();
   }
 
   ngAfterViewInit(): void {
@@ -31,7 +31,7 @@ export class MovieListComponent implements OnInit, AfterViewInit {
     console.log(this.movieCards.first);
   }
 
-  loadProducts(): void {
+  loadMovies(): void {
     // 1. short way: mock data
     // this.movies = MOVIES; // mock data
     // 2. access api directly

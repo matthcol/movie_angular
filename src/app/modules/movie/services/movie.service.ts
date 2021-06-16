@@ -26,6 +26,8 @@ export class MovieService {
   }
 
   createMovie(m: Movie): Observable<Movie> {
+    console.log("send http post to create movie:");
+    console.log(m);
     return this.http.post<Movie>(`${environment.apiBaseUrl}${endpoint}`, m);
   }
 }

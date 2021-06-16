@@ -27,7 +27,7 @@ export class MovieDetailComponent implements OnInit {
     // do http
     this.movieService.getMovieAsPromise(id).then(
       data => this.movie = data
-    )
+    );
   }
 
 }

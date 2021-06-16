@@ -19,6 +19,7 @@ export class MovieFormComponent implements OnInit {
   submitMovie(): void {
     // opt. validate movie
     console.log('submitMovie');
+    console.log(this.movie);
     this.newMovie.emit(
       this.movie
       // { title: 'A new Movie', year: 2020, duration: null, poster: null }

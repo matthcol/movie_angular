@@ -20,9 +20,17 @@ export class MovieDashboardComponent implements OnInit {
 
   addMovie(m: Movie){   
     let m2 = this.movieService.createMovie(m)
-    this.movieListComp.movies.push(m); //m2);
-    console.log('Add Movie:');
-    console.log(m2);
+    
+    console.log('Movie added in front:');
+    console.log(m);
+    m2.subscribe(
+      movie => {
+        this.movieListComp.movies.push(movie); //m2);
+        console.log('Movie added in backend:');
+        console.log(movie);
+      }
+    )
+    
   }
 
 }
