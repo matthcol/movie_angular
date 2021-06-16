@@ -9,6 +9,7 @@ import { SharedModule } from './modules/shared/shared.module';
 import { HeaderComponent } from './components/header/header.component';
 import { BasicSyntaxComponent } from './components/basic-syntax/basic-syntax.component';
 import { PageNotFoundComponent } from './components/error/page-not-found/page-not-found.component';
+import { StarModule } from './modules/star/star.module';
 // import { MovieModule } from './modules/movie/movie.module';
 // => lazy loading
 
@@ -25,7 +26,8 @@ import { PageNotFoundComponent } from './components/error/page-not-found/page-no
     AppRoutingModule,
     OtherModule,
     BrowserAnimationsModule, 
-    SharedModule
+    SharedModule, 
+    StarModule
   ],
   exports: [
     // modules exported

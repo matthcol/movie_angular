@@ -1,6 +1,6 @@
-import { Component, OnInit, QueryList, ViewChildren, AfterViewInit  } from '@angular/core';
+import { Component, OnInit, QueryList, ViewChildren, AfterViewInit } from '@angular/core';
 import { Movie } from '../../models/movie';
-import { MOVIES } from '../../mock/movies.mock';
+// import { MOVIES } from '../../mock/movies.mock';
 // import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MovieService } from '../../services/movie.service';
 import  { MovieCardComponent } from '../movie-card/movie-card.component';
@@ -38,12 +38,12 @@ export class MovieListComponent implements OnInit, AfterViewInit {
     // this.http.get('http://localhost:3004/movies').toPromise().then(
     // 3. access data via service layer
     this.movieService.getMoviesAsPromise().then(
-      data => this.movies = data
+       data => this.movies = data
     )
   }
 
-  loadProductsAsync(): void {
-    this.movies$ = this.movieService.getMoviesAsObservable();
-  }
+  // loadProductsAsync(): void {
+  //   this.movies$ = this.movieService.getMoviesAsObservable();
+  // }
 
 }
