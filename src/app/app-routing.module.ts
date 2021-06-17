@@ -15,10 +15,10 @@ const routes: Routes = [
   //{ path: 'stars', component: StarsComponent },
   { path: 'movies', loadChildren: () => import('./modules/movie/movie.module').then(m =>m.MovieModule)},
   // domain/first, domain/second
-  //{ path: 'domain', canLoad: [ DomainGuard ], loadChildren: () => import('./modules/domain/domain.module').then(m =>m.DomainModule)},
+  { path: 'domain', canLoad: [ DomainGuard ], loadChildren: () => import('./modules/domain/domain.module').then(m =>m.DomainModule)},
   //{ path: 'other', component: OtherComponent },  // eager loading of module Other
   //{ path: 'learn', component: BasicSyntaxComponent },
-  { path: '', redirectTo: '/movies', pathMatch:'full'},
+  { path: '', redirectTo: '/first', pathMatch:'full'},
   { path: '**', component: PageNotFoundComponent}
 ];
 
