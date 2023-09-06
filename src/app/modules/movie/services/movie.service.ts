@@ -4,7 +4,7 @@ import { Movie } from '../models/movie';
 import { environment } from 'src/environments/environment'; // swith auto avec .prod en prod
 import { Observable } from 'rxjs';
 
-const endpoint = '/movies';
+const endpoint = '/movie';
 
 @Injectable({
   providedIn: 'root'
